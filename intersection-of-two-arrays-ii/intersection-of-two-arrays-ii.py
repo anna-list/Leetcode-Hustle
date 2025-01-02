@@ -11,10 +11,6 @@ class Solution:
             
         for i in target_nums: 
             if i in reference_nums:
-                print("--------")
-                print(i)
-                print(target_nums)
-                print(reference_nums)
                 subset_array.append(i)
                 reference_nums.remove(i)
                 
