@@ -6,15 +6,18 @@ class Solution:
         
         len_nums = len(nums)
         k = k%len_nums
-        ### Solution 1
+        ### Solution 1 using slicing
         # if k > 0 :
         #     nums[:] = nums[-k:]+nums[:len_nums-k]
         
-        ### Solution 2
+        ## Solution 2 using reversed and reverse 
         if k > 0 :
             nums.reverse()
             nums[0:k] = reversed(nums[0:k])
             nums[k:] = reversed(nums[k:])
+        
+            
+        
             
         
         
